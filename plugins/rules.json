@@ -1,0 +1,657 @@
+{
+    "title": "Which mode do you like to use?",
+    "Write": {
+        "title": "What type of content do you want?",
+        "ad_copy": {
+            "form_data": [
+                {
+                    "label": "What are you advertising on?",
+                    "type": "text",
+                    "name": "advertising",
+                    "required": true,
+                    "readonly": "false",
+                    "value": ""
+                },
+                {
+                    "label": "What language do you want your content in?",
+                    "type": "select",
+                    "name": "language",
+                    "required": true,
+                    "readonly": "false",
+                    "value": "english",
+                    "options": [
+                        {
+                            "option": "English",
+                            "value": "english"
+                        },
+                        {
+                            "option": "Spanish",
+                            "value": "spanish"
+                        },
+                        {
+                            "option": "Chinese",
+                            "value": "chinese"
+                        }
+                    ]
+                },
+                {
+                    "label": "What number of paragraphs do you prefer?",
+                    "type": "range",
+                    "name": "paragraphs",
+                    "required": true,
+                    "readonly": "false",
+                    "value": "1",
+                    "range": [
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "label": "What style do you want your content in?",
+                    "type": "text",
+                    "name": "style",
+                    "readonly": "false",
+                    "required": true
+                },
+                {
+                    "label": "",
+                    "type": "hidden",
+                    "name": "generator_input",
+                    "required": true,
+                    "readonly": "false",
+                    "generator_data": {
+                        "paragraphs": "Write a {paragraphs} paragraph long ad copy",
+                        "language": "in {language}",
+                        "advertising": "advertising {advertising}",
+                        "style": "in the style {style}"
+                    }
+                }
+            ]
+        },
+        "narration": {
+            "form_data": [
+                {
+                    "label": "Please enter topic of naration?",
+                    "type": "text",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "topic"
+                },
+                {
+                    "label": "What language do you want your content in?",
+                    "type": "select",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "language",
+                    "options": [
+                        {
+                            "option": "English",
+                            "value": "english"
+                        },
+                        {
+                            "option": "Spanish",
+                            "value": "spanish"
+                        },
+                        {
+                            "option": "Chinese",
+                            "value": "chinese"
+                        }
+                    ]
+                },
+                {
+                    "label": "Do you need your content to be SEO optimized?",
+                    "type": "select",
+                    "name": "seo",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Yes",
+                            "value": "yes"
+                        },
+                        {
+                            "option": "No",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "label": "What number of paragraphs do you prefer?",
+                    "type": "range",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "paragraphs",
+                    "range": [
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "label": "Please select a tone that best suit your work?",
+                    "type": "select",
+                    "name": "tone",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Formal",
+                            "value": "formal"
+                        },
+                        {
+                            "option": "Informal",
+                            "value": "informal"
+                        },
+                        {
+                            "option": "Optimistic",
+                            "value": "optimistic"
+                        },
+                        {
+                            "option": "Pessimistic",
+                            "value": "pessimistic"
+                        },
+                        {
+                            "option": "Joyful",
+                            "value": "joyful"
+                        },
+                        {
+                            "option": "Sincere",
+                            "value": "sincere"
+                        },
+                        {
+                            "option": "Humourous",
+                            "value": "humourous"
+                        },
+                        {
+                            "option": "Fearful",
+                            "value": "fearful"
+                        }
+                    ]
+                },
+                {
+                    "label": "Please input any additional information?",
+                    "type": "text",
+                    "required": false,
+                    "readonly": "false",
+                    "name": "additional"
+                },
+                {
+                    "label": "",
+                    "type": "hidden",
+                    "name": "generator_input",
+                    "required": true,
+                    "readonly": "false",
+                    "generator_data": {
+                        "paragraphs": "Write a {paragraphs} paragraph long narration",
+                        "tone": "in {tone} tone",
+                        "language": "in {language}",
+                        "topic": "about {topic}.",
+                        "seo": "Should be seo optimized.",
+                        "additional": "{additional}"
+                    }
+                }
+            ]
+        },
+        "blog_post": {
+            "form_data": [
+                {
+                    "label": "Please enter topic of blog post?",
+                    "type": "text",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "topic"
+                },
+                {
+                    "label": "What language do you want your content in?",
+                    "type": "select",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "language",
+                    "options": [
+                        {
+                            "option": "English",
+                            "value": "english"
+                        },
+                        {
+                            "option": "Spanish",
+                            "value": "spanish"
+                        },
+                        {
+                            "option": "Chinese",
+                            "value": "chinese"
+                        }
+                    ]
+                },
+                {
+                    "label": "Do you need your content to be SEO optimized?",
+                    "type": "select",
+                    "name": "seo",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Yes",
+                            "value": "yes"
+                        },
+                        {
+                            "option": "No",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "label": "What number of paragraphs do you prefer?",
+                    "type": "range",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "paragraphs",
+                    "range": [
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "label": "Please select a tone that best suit your work?",
+                    "type": "select",
+                    "name": "tone",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Formal",
+                            "value": "formal"
+                        },
+                        {
+                            "option": "Informal",
+                            "value": "informal"
+                        },
+                        {
+                            "option": "Optimistic",
+                            "value": "optimistic"
+                        },
+                        {
+                            "option": "Pessimistic",
+                            "value": "pessimistic"
+                        },
+                        {
+                            "option": "Joyful",
+                            "value": "joyful"
+                        },
+                        {
+                            "option": "Sincere",
+                            "value": "sincere"
+                        },
+                        {
+                            "option": "Humourous",
+                            "value": "humourous"
+                        },
+                        {
+                            "option": "Fearful",
+                            "value": "fearful"
+                        }
+                    ]
+                },
+                {
+                    "label": "Please input any additional information?",
+                    "type": "text",
+                    "required": false,
+                    "readonly": "false",
+                    "name": "additional"
+                },
+                {
+                    "label": "",
+                    "type": "hidden",
+                    "name": "generator_input",
+                    "required": true,
+                    "readonly": "false",
+                    "generator_data": {
+                        "paragraphs": "Write a {paragraphs} paragraph long blog post",
+                        "tone": "in {tone} tone",
+                        "language": "in {language}",
+                        "topic": "about {topic}.",
+                        "seo": "Should be seo optimized.",
+                        "additional": "{additional}"
+                    }
+                }
+            ]
+        },
+        "news_article": {
+            "form_data": [
+                {
+                    "label": "Please enter topic of news article?",
+                    "type": "text",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "topic"
+                },
+                {
+                    "label": "What language do you want your content in?",
+                    "type": "select",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "language",
+                    "options": [
+                        {
+                            "option": "English",
+                            "value": "english"
+                        },
+                        {
+                            "option": "Spanish",
+                            "value": "spanish"
+                        },
+                        {
+                            "option": "Chinese",
+                            "value": "chinese"
+                        }
+                    ]
+                },
+                {
+                    "label": "Do you need your content to be SEO optimized?",
+                    "type": "select",
+                    "name": "seo",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Yes",
+                            "value": "yes"
+                        },
+                        {
+                            "option": "No",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "label": "What number of paragraphs do you prefer?",
+                    "type": "range",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "paragraphs",
+                    "range": [
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "label": "Please select a tone that best suit your work?",
+                    "type": "select",
+                    "name": "tone",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Formal",
+                            "value": "formal"
+                        },
+                        {
+                            "option": "Informal",
+                            "value": "informal"
+                        },
+                        {
+                            "option": "Optimistic",
+                            "value": "optimistic"
+                        },
+                        {
+                            "option": "Pessimistic",
+                            "value": "pessimistic"
+                        },
+                        {
+                            "option": "Joyful",
+                            "value": "joyful"
+                        },
+                        {
+                            "option": "Sincere",
+                            "value": "sincere"
+                        },
+                        {
+                            "option": "Humourous",
+                            "value": "humourous"
+                        },
+                        {
+                            "option": "Fearful",
+                            "value": "fearful"
+                        }
+                    ]
+                },
+                {
+                    "label": "Please input any additional information?",
+                    "type": "text",
+                    "required": false,
+                    "readonly": "false",
+                    "name": "additional"
+                },
+                {
+                    "label": "",
+                    "type": "hidden",
+                    "name": "generator_input",
+                    "required": true,
+                    "readonly": "false",
+                    "generator_data": {
+                        "paragraphs": "Write a {paragraphs} paragraph long news article",
+                        "tone": "in {tone} tone",
+                        "language": "in {language}",
+                        "topic": "about {topic}.",
+                        "seo": "Should be seo optimized.",
+                        "additional": "{additional}"
+                    }
+                }
+            ]
+        },
+        "speech": {
+            "form_data": [
+                {
+                    "label": "Please enter topic of speech?",
+                    "type": "text",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "topic"
+                },
+                {
+                    "label": "Please input any additional information?",
+                    "type": "text",
+                    "required": false,
+                    "readonly": "false",
+                    "name": "additional"
+                },
+                {
+                    "label": "What language do you want your content in?",
+                    "type": "select",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "language",
+                    "options": [
+                        {
+                            "option": "English",
+                            "value": "english"
+                        },
+                        {
+                            "option": "Spanish",
+                            "value": "spanish"
+                        },
+                        {
+                            "option": "Chinese",
+                            "value": "chinese"
+                        }
+                    ]
+                },
+                {
+                    "label": "Please select a style that best suit your work?",
+                    "type": "select",
+                    "name": "style",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Persuasive",
+                            "value": "persuasive"
+                        },
+                        {
+                            "option": "Informative",
+                            "value": "informative"
+                        },
+                        {
+                            "option": "Entertaining",
+                            "value": "entertaining"
+                        },
+                        {
+                            "option": "Motivational",
+                            "value": "motivational"
+                        },
+                        {
+                            "option": "Demonstrative",
+                            "value": "demonstrative"
+                        },
+                        {
+                            "option": "Oratorical",
+                            "value": "oratorical"
+                        }
+                    ]
+                },
+                {
+                    "label": "What tone would you like us to use?",
+                    "type": "select",
+                    "name": "tone",
+                    "required": true,
+                    "readonly": "false",
+                    "options": [
+                        {
+                            "option": "Formal",
+                            "value": "formal"
+                        },
+                        {
+                            "option": "Informal",
+                            "value": "informal"
+                        },
+                        {
+                            "option": "Optimistic",
+                            "value": "optimistic"
+                        },
+                        {
+                            "option": "Pessimistic",
+                            "value": "pessimistic"
+                        },
+                        {
+                            "option": "Joyful",
+                            "value": "joyful"
+                        },
+                        {
+                            "option": "Sincere",
+                            "value": "sincere"
+                        },
+                        {
+                            "option": "Humourous",
+                            "value": "humourous"
+                        },
+                        {
+                            "option": "Fearful",
+                            "value": "fearful"
+                        }
+                    ]
+                },
+                {
+                    "label": "What number of paragraphs do you prefer?",
+                    "type": "range",
+                    "required": true,
+                    "readonly": "false",
+                    "name": "paragraphs",
+                    "range": [
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "label": "",
+                    "type": "hidden",
+                    "name": "generator_input",
+                    "required": true,
+                    "readonly": "false",
+                    "generator_data": {
+                        "paragraphs": "Write a {paragraphs} paragraph long",
+                        "style": "{style} speech",
+                        "language": "in {language}",
+                        "topic": "about {topic}.",
+                        "tone": "The tone should be {tone}",
+                        "additional": "and the following additional details are given {additional}"
+                    }
+                }
+            ]
+        }
+    },
+    "Rewrite": {
+        "form_data": [
+            {
+                "label": "Please enter text you want us to re-write?",
+                "type": "text",
+                "required": true,
+                "readonly": "false",
+                "name": "text"
+            },
+            {
+                "label": "Would you like a general rewrite or a specific tone to be used?",
+                "type": "select",
+                "name": "extension_type",
+                "required": true,
+                "readonly": "false",
+                "options": [
+                    {
+                        "option": "General rewrite",
+                        "value": "same style it was written"
+                    },
+                    {
+                        "option": "Specific tone",
+                        "value": "following style: {style}"
+                    }
+                ]
+            },
+            {
+                "label": "If specific tone, please enter the style or point of view you want.",
+                "type": "text",
+                "required": false,
+                "name": "style"
+            },
+            {
+                "label": "",
+                "type": "hidden",
+                "name": "generator_input",
+                "required": true,
+                "readonly": "false",
+                "generator_data": {
+                    "extension_type": "Rewrite the following text in the {extension_type}.",
+                    "style": "",
+                    "text": "Text: {text}."
+                }
+            }
+        ]
+    },
+    "Extend": {
+        "form_data": [
+            {
+                "label": "Please enter text you want to extend?",
+                "type": "text",
+                "required": true,
+                "readonly": "false",
+                "name": "text"
+            },
+            {
+                "label": "What number of paragraphs do you like to extend?",
+                "type": "range",
+                "name": "paragraphs",
+                "range": [
+                    1,
+                    5
+                ]
+            },
+            {
+                "label": "",
+                "type": "hidden",
+                "name": "generator_input",
+                "required": true,
+                "readonly": "false",
+                "generator_data": {
+                    "paragraphs": "Extend the following text by {paragraphs} paragraphs",
+                    "text": ": {text}"
+                }
+            }
+        ]
+    }
+}

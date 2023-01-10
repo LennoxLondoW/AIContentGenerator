@@ -1,0 +1,1 @@
+[24-Dec-2022 15:53:07 UTC] PHP Warning:  Use of undefined constant base_path - assumed 'base_path' (this will throw an Error in a future version of PHP) in /home2/memehubc/lennox.anchortrends.com/_/pythonAI/controlers/adminControler.php on line 7

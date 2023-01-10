@@ -1,0 +1,1 @@
+{"details":{"card":{"brand":"VISA","expMonth":3,"expYear":2023,"last4":"1111"},"method":"Card","billing":{"postalCode":"96799"}},"status":"OK","token":"cnon:CBASEN2WEWTgVg3IjZyBI4ChnzQ"}
